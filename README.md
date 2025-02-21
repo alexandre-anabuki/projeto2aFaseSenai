@@ -1,2 +1,4 @@
 # projeto2aFaseSenai
-S.A.
+Alexandre Neves Anabuki
+Gabriel C.
+Maria Lucia Neves da Silva
