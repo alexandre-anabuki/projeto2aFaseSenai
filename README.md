@@ -7,5 +7,5 @@ Este projeto tem como objetivo, simular um sistema de cadastro de ferramentas e 
 # Equipe de desenvolvimento
 - Alexandre Cesar Garcia Jr.
 - Alexandre Neves Anabuki
-- Gabriel C.
+- Gabriel C. (Github: https://github.com/castrill)
 - Maria Lucia Neves da Silva
