@@ -1,4 +1,4 @@
-.container-cadastro{
+.container-login{
     height: 80vh;
     width: 70vh;
     display: flex;
@@ -10,7 +10,7 @@
     background-color: var(--cor-1);
 }
 
-.titulo-cadastro{
+.titulo-login{
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -18,7 +18,7 @@
     font-size: 40px;
 }
 
-.container-inputs{
+.container-inputslogin{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,25 +26,19 @@
     gap: 30px;
 }
 
-.input-nome{
+.inputlogin-nome{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.input-senha{
+.inputlogin-senha{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.input-tel{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.container-botoes{
+.container-botoeslogin{
     display: flex;
     justify-content: space-around;
     gap: 100px;
@@ -63,6 +57,8 @@ button{
     width: 100px;
     border-radius: 5px;
     border: 1px solid black;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 label{

@@ -5,16 +5,16 @@ function Cadastro() {
     <div className='container-cadastro'>
         <h2 className='titulo-cadastro'>Cadastro</h2>
 
-        <div className='contauiner-inputs'>
-            <div>
+        <div className='container-inputs'>
+            <div className='input-nome'>
                 <label htmlFor="">Nome</label>
                 <input type="text" />
             </div>
-            <div>
+            <div className='input-senha'>
                 <label htmlFor="">Senha</label>
                 <input type="text" />
             </div>
-            <div>
+            <div className='input-tel'>
                 <label htmlFor="">Telefone</label>
                 <input type="text" />
             </div>

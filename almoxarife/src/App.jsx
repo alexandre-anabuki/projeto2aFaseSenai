@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import Cadastro from './pages/Cadastro'
+import Login from './pages/Login'
 
 function App() {
+  // const [pagina, setPagina] = useState(<Login />)
 
   return (
     <div className='container-app'>
-      <Cadastro />
+      <Login />
+      {/* <Cadastro /> */}
+      {/* {pagina} */}
     </div>
   )
 }
