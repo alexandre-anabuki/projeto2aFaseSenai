@@ -20,6 +20,8 @@ function Cadastro() {
             </div>
         </div>
 
+        
+
         <div className='container-botoes'>
             <button className='btn-cadastra'>Cadastrar</button>
             <button className='btn-cancela'>Cancelar</button>
