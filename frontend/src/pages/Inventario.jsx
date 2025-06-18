@@ -4,9 +4,11 @@ function Inventario() {
   return (
     <div className='container-inv'>
       <div className='container-menu'>
+        <div className='logo'>
+          LOGO
+        </div>
         <button>Inventario</button>
-        <button>Aquisição</button>
-        <button>Emprétismo</button>
+        <button>Movimentação</button>
         <button>Cadastro</button>
         <button>Meus Dados</button>
         <button>Sair</button>
@@ -22,6 +24,9 @@ function Inventario() {
                     <th>Custo Total</th>
                 </tr>
             </thead>
+            <tbody>
+
+            </tbody>
         </table>
     </div>
   )

@@ -14,8 +14,8 @@ function Cadastro() {
                 <label htmlFor="">Senha</label>
                 <input type="text" />
             </div>
-            <div className='input-tel'>
-                <label htmlFor="">Telefone</label>
+            <div className='input-cnpj'>
+                <label htmlFor="">CNPJ</label>
                 <input type="text" />
             </div>
         </div>
