@@ -44,6 +44,21 @@ app.get('/usuario/:id', async (req, res) => {
     }
 });
 
+//ROTA DE LOGIN
+app.get('/usuario/:nome', async (req, res) => {
+    const { nome } = req.params;
+    try {
+        const [rows] = await pool.query('SELECT * FROM usuario WHERE nome = ?', [nome]);
+        if (rows.length === 0) {
+            return res.status(404).json({ error: 'Usuário não encontrado' });
+        }
+        res.json(rows[0]);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json({ error: 'Erro ao buscar usuário' });
+    }
+});
+
 
 app.post('/usuario', async (req, res) => {
     const { nome, senha, cnpj } = req.body;

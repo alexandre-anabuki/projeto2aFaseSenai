@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className='container-app'>
-      <Inventario />
-      {/* <Login /> */}
+      {/* <Inventario /> */}
+      <Login />
       {/* <Cadastro /> */}
       {/* {pagina} */}
     </div>

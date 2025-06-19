@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,9 +24,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: flex; */
   /* place-items: center; */
-  min-width: 320px;
+  /* min-width: 320px;
   min-height: 100vh;
 }
 
@@ -65,4 +65,28 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+/*---------------------------------------------------------*/
+
+:root{
+  --cor-1: #E3F2FD;
+  --cor-2: #BBDEFB;
+  --cor-3: #90CAF9;
+  --cor-4: #64B5F6;
+  --cor-5: #42A5F5;
+  --cor-6: #2196F3;
+  --cor-7: #1E88E5;
+  --cor-8: #1976D2;
+  --cor-9: #1565C0;
+  --cor-0: #0D47A1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root, body, html{
+  min-height: 100vh;
 }

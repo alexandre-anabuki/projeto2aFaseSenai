@@ -1,4 +1,4 @@
-.container-login{
+.form-login{
     height: 80vh;
     width: 70vh;
     display: flex;
@@ -64,4 +64,13 @@ button{
 label{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+.container-login{
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-0);
 }

@@ -1,4 +1,4 @@
-.container-cadastro{
+.form-cadastro{
     height: 80vh;
     width: 70vh;
     display: flex;
@@ -8,6 +8,15 @@
     gap: 100px;
     border-radius: 10px;
     background-color: var(--cor-1);
+}
+
+.container-cadastro{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-0);
 }
 
 .titulo-cadastro{
@@ -56,6 +65,7 @@ input{
     width: 480px;
     border-radius: 5px;
     border: 1px solid black;
+    font-size: large;
 }
 
 button{
@@ -68,4 +78,10 @@ button{
 label{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
