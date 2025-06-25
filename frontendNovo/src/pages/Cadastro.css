@@ -85,3 +85,15 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.btn-cadastra{
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-9);
+}
+
+.btn-cancela{
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-9);
+}

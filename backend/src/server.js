@@ -45,9 +45,11 @@ app.get('/usuario/:id', async (req, res) => {
 });
 
 //ROTA DE LOGIN
-app.get('/usuario/:nome', async (req, res) => {
+app.get('/usuario/login/:nome', async (req, res) => {
     const { nome } = req.params;
+    // const nome  = req.query.nome;
     try {
+        console.log(nome)
         const [rows] = await pool.query('SELECT * FROM usuario WHERE nome = ?', [nome]);
         if (rows.length === 0) {
             return res.status(404).json({ error: 'Usuário não encontrado' });

@@ -74,3 +74,15 @@ label{
         align-items: center;
         background-color: var(--cor-0);
 }
+
+.btn-login{
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-8);
+}
+
+.btn-cadastro-pg{
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-8);
+}
