@@ -1,0 +1,81 @@
+.container-reg{
+    height: 100vh;
+    /* gap: 10px; */
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: var(--cor-6);
+}
+
+.container-reg-inv{
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 100px; */
+    background-color: var(--cor-1);
+}
+
+.coluna-inv1{
+    /* gap: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coluna-inv2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-reg-mov{
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-1);
+}
+
+.coluna-mov1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coluna-mov2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.input-reg-inv{
+    width: 10vw;
+}
+
+.input-reg-mov{
+    width: 10vw;
+}
+
+/* .container-menu{
+    height: 100%;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+     border: 1px solid black; 
+    background-color: var(--cor-8);
+} */

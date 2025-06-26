@@ -1,9 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Inventario.css'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 function Inventario() {
   const navigate = useNavigate()
   const [inventario, setInventario] = useState([])
+
+  const fetchInventario = async () => {
+    try {
+        const response = await axios.get('http://localhost:3000/inventario');
+        setInventario(response.data);
+    } catch (error) {
+        console.error('Erro ao buscar clientes:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchInventario();
+  }, []);
 
 
   function naviInv(){
@@ -46,10 +60,12 @@ function Inventario() {
             <tbody>
               {inventario.map((item) => (
                  <tr>
-                  <td>{item.id}</td>
+                  <td>{item.id_inventario}</td>
                   <td>{item.nome}</td>
                   <td>{item.estoque}</td>
-                  
+                  <td>{item.patrimonio}</td>
+                  <td>{item.preco_unitario}</td>
+                  <td>{item.preco_total}</td>
                  </tr> 
               ))}
             </tbody>

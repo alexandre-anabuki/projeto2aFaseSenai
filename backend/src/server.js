@@ -149,7 +149,7 @@ app.post('/inventario', async (req, res) => {
     const { nome, estoque, patrimonio, preco_unitario, preco_total } = req.body;
     try {
         const [result] = await pool.query(
-            'INSERT INTO usuario (nome, estoque, patrimonio, preco_unitario, preco_total) VALUES (?, ?, ?, ?, ?)',
+            'INSERT INTO inventario (nome, estoque, patrimonio, preco_unitario, preco_total) VALUES (?, ?, ?, ?, ?)',
             [nome, estoque, patrimonio, preco_unitario, preco_total]
         );
         const [novoItem] = await pool.query('SELECT * FROM inventario WHERE id_inventario = ?', [result.insertId]);
