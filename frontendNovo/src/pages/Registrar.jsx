@@ -38,7 +38,27 @@ function Registrar() {
             // limparForm();
         }
     } catch (error) {
-        console.error('Erro ao adicionar cliente:', error);
+        console.error('Erro ao adicionar item:', error);
+    }
+  };
+
+  const regMov = async () => {
+    try {
+        const item = {
+            data_movimento: inputData,
+            tipo_movimento: inputTipo,
+            nome_cliente: inputCliente,
+            nome_item: inputProduto,
+            quantidade: inputQuantidade,
+            custo_total: inputCusto
+        };
+        const response = await axios.post('http://localhost:3000/movimentacao', item);
+        if (response.status === 201) {
+            // fetchClientes();
+            // limparForm();
+        }
+    } catch (error) {
+        console.error('Erro ao adicionar registro:', error);
     }
 };
 
@@ -56,6 +76,9 @@ function Registrar() {
     navigate('/')
   }
 
+  function naviMov(){
+    navigate('/movimento')
+  }
 
   return (
     <div className='container-reg'>
@@ -65,7 +88,7 @@ function Registrar() {
         </div>
         <div className='container-btn'>
           <button onClick={naviInv}>Inventario</button>
-          <button>Movimentação</button>
+          <button onClick={naviMov}>Movimentação</button>
           <button onClick={naviReg}>Registrar</button>
           <button>Meus Dados</button>
           <button onClick={logoff}>Sair</button>
@@ -105,7 +128,7 @@ function Registrar() {
 
           <div className='coluna-mov1'>
             <label htmlFor="">Data</label>
-            <input className='input-reg-mov' type="text" value={inputData} onChange={(event) => setInputData(event.target.value)}/>
+            <input className='input-reg-mov' type="date" value={inputData} onChange={(event) => setInputData(event.target.value)}/>
 
             <label htmlFor="">Tipo da movimentção</label>
             {/* <select value={tipoSelecionado} onChange={selecionarTipo}> */}
@@ -132,7 +155,7 @@ function Registrar() {
           </div>
 
 
-          <button className='btn-confirma-mov'>Registrar Movimentação</button>
+          <button className='btn-confirma-mov' onClick={regMov}>Registrar Movimentação</button>
         </div>
       </div>
 

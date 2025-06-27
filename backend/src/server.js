@@ -182,7 +182,7 @@ app.put('/inventario/:id', async (req, res) => {
 
     try {
         const [result] = await pool.query(
-            'UPDATE usuario SET nome = ?, estoque = ?, patrimonio = ?, preco_unitario = ?, preco_total = ? WHERE id_inventario = ?',
+            'UPDATE inventario SET nome = ?, estoque = ?, patrimonio = ?, preco_unitario = ?, preco_total = ? WHERE id_inventario = ?',
             [nome, estoque, patrimonio, preco_unitario, preco_total, id]
         );
         if (result.affectedRows === 0) {
@@ -233,7 +233,7 @@ app.post('/movimentacao', async (req, res) => {
     try {
         const [result] = await pool.query(
             'INSERT INTO movimentacao (data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-            [nome, data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id]
+            [data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id]
         );
         const [novoRegistro] = await pool.query('SELECT * FROM movimentacao WHERE id_movimentacao = ?', [result.insertId]);
         res.status(201).json(novoRegistro[0]);
@@ -261,12 +261,12 @@ app.delete('/movimentacao/:id', async (req, res) => {
 
 app.put('/movimentacao/:id', async (req, res) => {
     const { id } = req.params;
-    const { nome, data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id } = req.body;
+    const { data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id } = req.body;
 
     try {
         const [result] = await pool.query(
-            'UPDATE movimentacao SET nome = ?, data_movimento = ?, tipo_movimento = ?, nome_cliente = ?, nome_item = ?, quantidade = ?, custo_total = ?, usuario_id = ?, inventario_id = ? WHERE id = ?',
-            [nome, data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id, id]
+            'UPDATE movimentacao SET data_movimento = ?, tipo_movimento = ?, nome_cliente = ?, nome_item = ?, quantidade = ?, custo_total = ?, usuario_id = ?, inventario_id = ? WHERE id_movimentacao = ?',
+            [data_movimento, tipo_movimento, nome_cliente, nome_item, quantidade, custo_total, usuario_id, inventario_id, id]
         );
         if (result.affectedRows === 0) {
             return res.status(404).json({ error: 'Usuário não encontrado' });

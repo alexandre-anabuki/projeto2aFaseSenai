@@ -11,7 +11,7 @@ function Inventario() {
         const response = await axios.get('http://localhost:3000/inventario');
         setInventario(response.data);
     } catch (error) {
-        console.error('Erro ao buscar clientes:', error);
+        console.error('Erro ao buscar item:', error);
     }
   };
 
@@ -32,6 +32,10 @@ function Inventario() {
     navigate('/')
   }
 
+  function naviMov(){
+    navigate('/movimento')
+  }
+
   return (
     <div className='container-inv'>
       <div className='container-menu'>
@@ -40,7 +44,7 @@ function Inventario() {
         </div>
         <div className='container-btn'>
           <button onClick={naviInv}>Inventario</button>
-          <button>Movimentação</button>
+          <button onClick={naviMov}>Movimentação</button>
           <button onClick={naviReg}>Registrar</button>
           <button>Meus Dados</button>
           <button onClick={logoff}>Sair</button>
