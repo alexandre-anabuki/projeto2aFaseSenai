@@ -92,8 +92,16 @@ input::-webkit-inner-spin-button {
     background-color: var(--cor-9);
 }
 
+.btn-cadastra:hover{
+    background-color: var(--cor-0);
+}
+
 .btn-cancela{
     border: 0;
     color: var(--cor-1);
     background-color: var(--cor-9);
+}
+
+.btn-cancela:hover{
+    background-color: var(--cor-0);
 }

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     /* border: 1px solid black; */
-    background-color: var(--cor-6);
+    background-color: var(--cor-7);
 }
 
 .container-reg-inv{
@@ -67,6 +67,36 @@
 .input-reg-mov{
     width: 10vw;
 }
+
+.btn-confirma-inv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-8);
+}
+
+.btn-confirma-inv:hover{
+    background-color: var(--cor-0);
+}
+
+.btn-confirma-mov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    border: 0;
+    color: var(--cor-1);
+    background-color: var(--cor-8);
+}
+
+.btn-confirma-mov:hover{
+    /* color: black; */
+    background-color: var(--cor-0);
+}
+
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {

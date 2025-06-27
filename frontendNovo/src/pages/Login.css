@@ -81,6 +81,14 @@ label{
     background-color: var(--cor-8);
 }
 
+.btn-login:hover{
+    background-color: var(--cor-0);
+}
+
+.btn-cadastro-pg:hover{
+    background-color: var(--cor-0);
+}
+
 .btn-cadastro-pg{
     border: 0;
     color: var(--cor-1);

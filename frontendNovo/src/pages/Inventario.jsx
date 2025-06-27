@@ -20,6 +20,18 @@ function Inventario() {
   }, []);
 
 
+//   const deletarItem = async (id) => {
+//     try {
+//         const response = await axios.delete(`http://localhost:3000/inventario/${id}`);
+//         if (response.status === 200) {
+//             fetchInventario();
+//         }
+//     } catch (error) {
+//         console.error('Erro ao deletar cliente:', error);
+//     }
+// };
+
+
   function naviInv(){
     navigate('/inventario')
   }
@@ -50,6 +62,7 @@ function Inventario() {
           <button onClick={logoff}>Sair</button>
         </div>
       </div>
+      <div>
         <table>
             <thead>
                 <tr>
@@ -59,6 +72,7 @@ function Inventario() {
                     <th>N° Patrimônio</th>
                     <th>Custo Unitário</th>
                     <th>Custo Total</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -70,10 +84,12 @@ function Inventario() {
                   <td>{item.patrimonio}</td>
                   <td>{item.preco_unitario}</td>
                   <td>{item.preco_total}</td>
+                  {/* <td className='aba-acao'><button className='btn-deletar' onClick={() => deletarItem(inventario.id)}>Excluir</button></td> */}
                  </tr> 
               ))}
             </tbody>
         </table>
+      </div>
     </div>
   )
 }
