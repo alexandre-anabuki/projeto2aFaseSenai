@@ -84,7 +84,7 @@ function Inventario() {
                   <td>{item.patrimonio}</td>
                   <td>{item.preco_unitario}</td>
                   <td>{item.preco_total}</td>
-                  <td className='aba-acao'><button className='btn-deletar' onClick={() => deletarItem(item.id)}>Excluir</button></td>
+                  <td className='aba-acao'><button className='btn-deletar' onClick={() => deletarItem(item.id_inventario)}>Excluir</button></td>
                  </tr> 
               ))}
             </tbody>
