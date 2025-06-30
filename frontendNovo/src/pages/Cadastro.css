@@ -63,6 +63,7 @@
 input{
     height: 35px;
     width: 480px;
+    padding: 10px 5px;
     border-radius: 5px;
     border: 1px solid black;
     font-size: large;

@@ -59,7 +59,7 @@ function Login() {
                 </div>
                 <div className='inputlogin-senha'>
                     <label htmlFor="">Senha</label>
-                    <input type="text" value={inputSenha} onChange={(event) => setInputSenha(event.target.value)}/>
+                    <input type="password" value={inputSenha} onChange={(event) => setInputSenha(event.target.value)}/>
                 </div>
             </div>
 

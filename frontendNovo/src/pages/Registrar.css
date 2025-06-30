@@ -7,9 +7,14 @@
     background-color: var(--cor-7);
 }
 
+.divisoria{
+    height: 15px;
+    background-color: var(--cor-7);
+}
+
 .container-reg-inv{
     height: 50vh;
-    width: 90vw;
+    width: 89vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,7 +37,7 @@
 
 .container-reg-mov{
     height: 50vh;
-    width: 90vw;
+    width: 89vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -58,7 +63,12 @@
     flex-direction: column;
 }
 
-
+.input-reg-sec{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    width: 10vw;
+}
 
 .input-reg-inv{
     width: 10vw;
