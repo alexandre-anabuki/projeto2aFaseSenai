@@ -31,7 +31,7 @@ tbody{
 
 .container-menu{
     height: 100%;
-    width: 13%;/*11vw*/
+    width: 11%;/*11vw*/
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -81,7 +81,7 @@ img{
 
 .btn-deletar{
     font-size: 14px;
-    height: 29px;
+    height: 28px;
     width: 60px;
     /* background-color: red; */
 }
@@ -92,22 +92,23 @@ img{
 
 .btn-edt{
     font-size: 14px;
-    height: 29px;
+    height: 28px;
     width: 60px;
     /* background-color: yellow; */
 }
 
 .btn-edt:hover{
-    background-color: rgb(214, 214, 0);
+    background-color: rgb(228, 228, 0);
 }
 
 .aba-acao{
-    border: 1px;
+    border: 1px thin black;
+    /* padding: 8px; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: xx-large solid black;
+    /* font-size: xx-large solid black; */
 }
 
 /* button{

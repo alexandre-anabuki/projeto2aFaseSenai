@@ -22,14 +22,22 @@
     background-color: var(--cor-1);
 }
 
+.separador{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .coluna-inv1{
-    /* gap: 10px; */
+    gap: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .coluna-inv2{
+    gap: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -45,12 +53,14 @@
 }
 
 .coluna-mov1{
+    gap: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .coluna-mov2{
+    gap: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
